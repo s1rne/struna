@@ -1,0 +1,20 @@
+{
+  "name": "struna",
+  "version": "1.0.0",
+  "description": "Струны в воздухе: играть руками перед камерой",
+  "scripts": {
+    "postinstall": "node scripts/copy-wasm.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^6.4.6"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.22-rc.20250304"
+  },
+  "private": true
+}
